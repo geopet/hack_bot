@@ -1,5 +1,8 @@
 # HackBot
 
+[![Gem
+Version](https://badge.fury.io/rb/hack_bot.png)](http://badge.fury.io/rb/hack_bot)
+
 The HackBot gem is a project for
 [OpenHackABQ](http://openhack.github.io/albuquerque/), but is open enough to be
 used by anyone.
