@@ -22,6 +22,6 @@ class ChannelInteractions
   end
 
   def next_meeting(m)
-    m.reply 'The next meeting will be starting 6:00pm on March 27 at Convivium Coworking (https://goo.gl/34F40H).'
+    m.reply "The next meeting will be starting #{Event::EVENT_TIME} on #{Event::EVENT_DATE} at #{Event::EVENT_LOCATION}."
   end
 end

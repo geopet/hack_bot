@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["g.petrie@gmail.com"]
   spec.summary       = %q{An irc bot specifically for #openhackabq on freenode.}
   spec.description   = %q{An irc bot specifically for #openhackabq on freenode.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/geopet/hack_bot"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

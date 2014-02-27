@@ -1,6 +1,8 @@
 # HackBot
 
-TODO: Write a gem description
+The HackBot gem is a project for
+[OpenHackABQ](http://openhack.github.io/albuquerque/), but is open enough to be
+used by anyone.
 
 ## Installation
 
@@ -18,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Example file to run hack_bot looks like this:
+
+```ruby
+require 'hack_bot'
+
+module Event
+  EVENT_TIME = '6:00pm'
+  EVENT_DATE = 'Thursday March 27'
+  EVENT_LOCATION = 'Convivium Coworking (https://goo.gl/34F40H)'
+end
+
+HackBot.start('irc.freenode.org',
+              ["#openhackabq", "#geopet"],
+              'openhackabq_bot',
+              'Hack Bot',
+              'hackbot')
+```
 
 ## Contributing
 
