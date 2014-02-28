@@ -8,3 +8,7 @@ rvm:
   - ruby-head
   - jruby-head
   - ree
+matrix:
+  allow_failures:
+    - jruby-18mode
+    - ree
