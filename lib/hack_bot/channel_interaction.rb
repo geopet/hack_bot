@@ -1,6 +1,6 @@
 require 'cinch'
 
-class ChannelInteractions
+class ChannelInteraction
   include Cinch::Plugin
 
   match 'hello', use_prefix: false, react_on: :message, method: :hello

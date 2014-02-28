@@ -11,7 +11,7 @@ module HackBot
         c.nick = nick
         c.realname = realname
         c.user = user
-        c.plugins.plugins = [ChannelInteractions]
+        c.plugins.plugins = [ChannelInteraction]
       end
     end
 
