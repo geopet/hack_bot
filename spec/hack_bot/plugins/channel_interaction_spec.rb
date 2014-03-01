@@ -1,20 +1,10 @@
 require 'spec_helper'
 
-describe Cinch::Plugin::HackBot::ChannelInteraction do
+describe HackBot::Plugins::ChannelInteraction do
   include Cinch::Test
-  include HackBot::Event
 
   before(:each) do
-    @bot = make_bot(Cinch::Plugin::HackBot::ChannelInteraction)
-  end
-
-  it 'prints information about the next meeting' do
-    TIME = '6:00pm'
-    DATE = 'January 1, 2014'
-    LOCATION = 'Convivium Coworking'
-
-    message = make_message(@bot, '!next meeting')
-    expect(get_replies(message, :channel).first.text).to eq("The next meeting will be starting 6:00pm on January 1, 2014 at Convivium Coworking.")
+    @bot = make_bot(HackBot::Plugins::ChannelInteraction)
   end
 
   it 'replies to a lone hello' do

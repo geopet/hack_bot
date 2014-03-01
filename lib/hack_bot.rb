@@ -1,7 +1,7 @@
 require 'cinch'
 require 'hack_bot/version'
-require 'hack_bot/event'
-require 'cinch/plugins/hack_bot/channel_interaction'
+require 'hack_bot/plugins/channel_interaction'
+require 'hack_bot/plugins/event'
 
 module HackBot
   def self.start(server, channels, nick, realname, user)
@@ -12,7 +12,8 @@ module HackBot
         c.nick = nick
         c.realname = realname
         c.user = user
-        c.plugins.plugins = [Cinch::Plugin::HackBot::ChannelInteraction]
+        c.plugins.plugins = [HackBot::Plugins::ChannelInteraction,
+                             HackBot::Plugins::Event]
       end
     end
 

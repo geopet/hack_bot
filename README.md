@@ -27,11 +27,9 @@ Example file to run hack_bot looks like this:
 ```ruby
 require 'hack_bot'
 
-module Event
-  EVENT_TIME = '6:00pm'
-  EVENT_DATE = 'Thursday March 27'
-  EVENT_LOCATION = 'Convivium Coworking (https://goo.gl/34F40H)'
-end
+TIME = '6:00pm'
+DATE = 'Thursday March 27'
+LOCATION = 'Convivium Coworking (https://goo.gl/34F40H)'
 
 HackBot.start('irc.freenode.org',
               ["#openhackabq", "#geopet"],
@@ -42,7 +40,7 @@ HackBot.start('irc.freenode.org',
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/hack_bot/fork )
+1. Fork it ( http://github.com/geopet/hack_bot/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
